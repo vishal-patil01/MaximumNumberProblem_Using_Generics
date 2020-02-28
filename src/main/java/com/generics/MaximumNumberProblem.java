@@ -11,4 +11,14 @@ public class MaximumNumberProblem {
         }
         return maxValue;
     }
+    public Float findMaximumNumber(Float firstValue, Float secondValue, Float thirdValue) {
+        Float maxValue = firstValue;
+        if (maxValue.compareTo(secondValue) < 0) {
+            maxValue = secondValue;
+        }
+        if (maxValue.compareTo(thirdValue) < 0) {
+            maxValue = thirdValue;
+        }
+        return maxValue;
+    }
 }
