@@ -21,4 +21,14 @@ public class MaximumNumberProblem {
         }
         return maxValue;
     }
+    public String findMaximumNumber(String firstValue, String secondValue, String thirdValue) {
+        String maxValue = firstValue;
+        if (maxValue.compareTo(secondValue) < 0) {
+            maxValue = secondValue;
+        }
+        if (maxValue.compareTo(thirdValue) < 0) {
+            maxValue = thirdValue;
+        }
+        return maxValue;
+    }
 }
