@@ -1,0 +1,14 @@
+package com.generics;
+
+public class MaximumNumberProblem {
+    public Integer findMaximumNumber(Integer firstValue, Integer secondValue, Integer thirdValue) {
+        Integer maxValue = firstValue;
+        if (maxValue.compareTo(secondValue) < 0) {
+            maxValue = secondValue;
+        }
+        if (maxValue.compareTo(thirdValue) < 0) {
+            maxValue = thirdValue;
+        }
+        return maxValue;
+    }
+}
